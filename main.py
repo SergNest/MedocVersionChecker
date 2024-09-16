@@ -32,12 +32,12 @@ if __name__ == "__main__":
     string_date = get_medoc_version()
 
     if string_date:
-        with open('data_value.txt', 'r') as file:
+        with open('/home/anesterenko/MedocVersionChecker/data_value.txt', 'r') as file:
             previous_date = file.read().strip()
             date_object = datetime.strptime(previous_date, "%d.%m.%Y")
 
         if datetime.strptime(string_date, "%d.%m.%Y") != date_object:
-            with open('data_value.txt', 'w', encoding='utf-8') as file:
+            with open('/home/anesterenko/MedocVersionChecker/data_value.txt', 'w', encoding='utf-8') as file:
                 file.write(string_date)
             sent_telegram(f'New version of medoc {string_date}', "344289734")
 
