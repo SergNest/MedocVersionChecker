@@ -47,7 +47,7 @@ if __name__ == "__main__":
 # from selenium import webdriver
 # from selenium.webdriver.common.by import By
 #
-# TOKEN = "609113382:AAF4OABFmQ_cwDGqwoXSdSjeqVV8rUsRXB0"
+# TOKEN = ""
 #
 #
 # def sent_telegram(mess, chat_id):
